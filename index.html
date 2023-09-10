@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Universo de Doctor Who</title>
+</head>
+<body>
+
+<!-- Cabeçalho -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Doctor Who</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#doctor10">10º Doctor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#doctor11">11º Doctor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#doctor12">12º Doctor</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Corpo da página -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <section id="doctor10">
+                <h2>10º Doctor</h2>
+                <img src="https://cdn4.whatculture.com/images/2021/03/e911c7516ab42ed0-1200x675.jpg" alt="10º Doctor" class="img-fluid">
+                <p>O 10º Doctor, interpretado por David Tennant, é conhecido por sua personalidade carismática e ternos elegantes. Ele viajou na TARDIS com companheiros como Rose Tyler e Martha Jones, enfrentando inúmeros inimigos e desafios intergalácticos.</p>
+            </section>
+        </div>
+        <div class="col-md-4">
+            <section id="doctor11">
+                <h2>11º Doctor</h2>
+                <img src="https://i2-prod.somersetlive.co.uk/incoming/article6964205.ece/ALTERNATES/s1200d/1_JS220857636.jpg" alt="11º Doctor" class="img-fluid">
+                <p>O 11º Doctor, interpretado por Matt Smith, é um Doctor excêntrico e enérgico. Ele é famoso por seu adorado cachecol de fez e por ter Amy Pond e Rory Williams como companheiros em suas aventuras no tempo e espaço.</p>
+            </section>
+        </div>
+        <div class="col-md-4">
+            <section id="doctor12">
+                <h2>12º Doctor</h2>
+                <img src="https://www.geekgirlauthority.com/wp-content/uploads/2018/12/21.jpg" alt="12º Doctor" class="img-fluid">
+                <p>O 12º Doctor, interpretado por Peter Capaldi, é conhecido por sua personalidade mais sombria e intelectual. Ele viajou com Clara Oswald e Bill Potts, enfrentando desafios morais e alienígenas enquanto explorava a galáxia em sua TARDIS.</p>
+            </section>
+        </div>
+    </div>
+</div>
+
+<!-- Rodapé -->
+<footer class="bg-dark text-white text-center py-2">
+    <span id="year"></span> &copy; Universo de Doctor Who
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // JavaScript para exibir o ano atual no rodapé
+    const yearElement = document.getElementById("year");
+    const currentYear = new Date().getFullYear();
+    yearElement.textContent = currentYear;
+</script>
+</body>
+</html>
